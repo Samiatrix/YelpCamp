@@ -2,15 +2,52 @@ YelpCamp is a website where users can create and review campgrounds. In order to
 
 This project was created using Node.js, Express, MongoDB, and Bootstrap. Passport.js was used to handle authentication.
 
-Features
-Users can create, edit, and remove campgrounds
-Users can review campgrounds once, and edit or remove their review
-User profiles include more information on the user (full name, email, phone, join date), their campgrounds, and the option to edit their profile or delete their account
-Search campground by name or location
-Sort campgrounds by highest rating, most reviewed, lowest price, or highest price
-Run it locally
+->Features
+Authentication:
+
+User login with username and password
+
+Admin sign-up with admin code
+
+Authorization:
+
+One cannot manage posts and view user profile without being authenticated
+
+One cannot edit or delete posts and comments created by other users
+
+Admin can manage all posts and comments
+
+Manage campground posts with basic functionalities:
+
+Create, edit and delete posts and comments
+
+Upload campground photos
+
+Display campground location on Google Maps
+
+Search existing campgrounds
+
+Manage user account with basic functionalities:
+
+Password reset via email confirmation (disabled)
+
+Profile page setup with sign-up
+
+Flash messages responding to users' interaction with the app
+
+Responsive web design
+
+Custom Enhancements
+Update campground photos when editing campgrounds
+
+Update personal information on profile page
+
+Improve image load time on the landing page using Cloudinary
+
+Use Helmet to strengthen security
+
+-> To Run it locally
 Install mongodb
-Create a cloudinary account to get an API key and secret code
 git clone https://github.com/Samiatrix/YelpCamp.git
 cd yelpcamp
 npm install
